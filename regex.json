@@ -1,0 +1,182 @@
+[
+    {
+        "id": "77a3e6e9-f0de-4544-8dc3-c758114ed942",
+        "scriptName": "narration",
+        "findRegex": "/<narration>/g",
+        "replaceString": "<div class=\"undertale-textbox\" style=\"display: none;\" data-talking=\"false\"><div class=\"textbox-content\">",
+        "trimStrings": [],
+        "placement": [
+            1,
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": true,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "ecfb6e26-f5f4-4a7a-933c-21de89873b33",
+        "scriptName": "/narration",
+        "findRegex": "/<\\/narration>/g",
+        "replaceString": "</div></div>",
+        "trimStrings": [],
+        "placement": [
+            1,
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": true,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "f63d2979-e4e6-4458-85dd-7c5aa59a47e6",
+        "scriptName": "dialogue",
+        "findRegex": "/<dialogue\\s+speed=\"([^\"]*)\"(?:\\s+extra=\"([^\"]*)\")?>/g",
+        "replaceString": "<div class=\"undertale-textbox\" style=\"display: none;\" data-character=\"{{char}}\" data-speed=\"$1\" data-extra=\"$2\" data-talking=\"true\"><div class=\"textbox-content\">",
+        "trimStrings": [],
+        "placement": [
+            1,
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": true,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "99b002ea-7f37-4425-8997-e3ffe7192621",
+        "scriptName": "/dialogue",
+        "findRegex": "/<\\/dialogue>/g",
+        "replaceString": "</div></div>",
+        "trimStrings": [],
+        "placement": [
+            1,
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": true,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "4a7f0162-08d0-4788-8663-fd814bfa1c82",
+        "scriptName": "thoughts",
+        "findRegex": "/<thoughts\\s+speed=\"([^\"]*)\"(?:\\s+extra=\"([^\"]*)\")?>/g",
+        "replaceString": "<div class=\"undertale-textbox\" style=\"display: none;\" data-character=\"{{char}}\" data-speed=\"$1\" data-extra=\"$2\" data-talking=\"false\"><div class=\"textbox-content\">",
+        "trimStrings": [],
+        "placement": [
+            1,
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": true,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "98148d08-ae99-4cd5-a2f6-3b9c126e7433",
+        "scriptName": "/thoughts",
+        "findRegex": "/<\\/thoughts>/g",
+        "replaceString": "</div></div>",
+        "trimStrings": [],
+        "placement": [
+            1,
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": true,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "b18fc28b-c32b-40e4-91b4-968549a354b8",
+        "scriptName": "sprite",
+        "findRegex": "/\\s*\\[sprite emotion=\"([^\"]*)\"\\]/g",
+        "replaceString": "<img class=\"character-sprite\" src=\"sprite/{{char}}/thinking/$1.png\">",
+        "trimStrings": [],
+        "placement": [
+            1,
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": true,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "f194d3dc-ed1a-4569-9035-1961c2a89724",
+        "scriptName": "asterisk_sprite",
+        "findRegex": "/(<img class=\"character-sprite\"[^>]*>)/g",
+        "replaceString": "$1<div class=\"dialogue-asterisk\">* </div>",
+        "trimStrings": [],
+        "placement": [
+            1,
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": true,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "5d5855b3-cc66-4292-8f5f-5cd01da87133",
+        "scriptName": "asterisk_none",
+        "findRegex": "/(<div class=\"textbox-content\">)(?!\\s*<img)/g",
+        "replaceString": "$1<div class=\"dialogue-asterisk\">* </div>",
+        "trimStrings": [],
+        "placement": [
+            1,
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": true,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    },
+    {
+        "id": "f9aaa95b-428b-4293-864e-77e71215d89e",
+        "scriptName": "sound",
+        "findRegex": "/\\[sound=\"([^\"]*)\"\\]/g",
+        "replaceString": "<div class=\"undertale-sound\" style=\"display: none;\" data-sound=\"$1\"></div>",
+        "trimStrings": [],
+        "placement": [
+            1,
+            2
+        ],
+        "disabled": false,
+        "markdownOnly": true,
+        "promptOnly": false,
+        "runOnEdit": true,
+        "substituteRegex": 0,
+        "minDepth": null,
+        "maxDepth": null
+    }
+]

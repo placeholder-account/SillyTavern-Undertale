@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Determination Mono';
+  src: url('fonts/Determination/determination-mono.otf.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mercy';
+    src: url('fonts/Mercy/mercy.otf.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    cursor: url('images/soul.png') 8 8, auto;
+}
+
+[style*="cursor: default"], [style*="cursor: pointer"], [style*="cursor: text"], .mes_button, .mes .avatar,
+.drawer-icon, #rightSendForm>div:not(.mes_stop), #qr--bar > .qr--buttons .qr--button, #leftSendForm>div,
+#extensionsMenu>.extension_container>div, .options-content a, .mes .mesIDDisplay, .menu_button, .mes_edit_buttons {
+    cursor: url('images/soul.png') 8 8, auto !important;
+}
+
+.custom-undertale-textbox {
+  font-family: 'Determination Mono', monospace;
+  background-color: #000000;
+  border: 4px solid #ffffff;
+  color: #ffffff;
+  padding: 20px;
+  max-width: 800px;
+  min-height: 120px;
+  position: relative;
+  box-sizing: border-box;
+  font-size: 1.4em;
+  line-height: 1.4;
+  margin: 15px 0;
+}
+
+.custom-textbox-content {
+    display: block;
+    overflow: hidden;
+    white-space: break-spaces;
+}
+
+.undertale-loud { font-size: 2.0em; }
+.undertale-quiet { font-size: 1.0em; }
+
+.custom-textbox-content {
+    display: flex;
+}
+
+.custom-character-sprite {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    float: left;
+}
+
+.custom-dialogue-asterisk {
+    min-height: 128px;
+    min-width: 25px;
+    display: inline-block;
+}
+
+.undertale-next-btn, .undertale-sfx-btn {
+    font-family: 'Mercy', monospace;
+    display: block;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    color: #f68228;
+    background-color: #000;
+    border: 3px solid #f68228;
+    padding: 8px 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: border-color 0.1s, color 0.1s;
+    margin-top: 15px;
+}
+
+.undertale-sfx-btn {
+    margin-bottom: 15px;
+}
+
+.undertale-next-btn:hover, .undertale-sfx-btn:hover {
+    border-color: #fff434;
+    color: #fff434;
+}
+
+.undertale-next-btn:active, .undertale-sfx-btn:active {
+    border-color: #fff;
+    color: #fff;
+}
