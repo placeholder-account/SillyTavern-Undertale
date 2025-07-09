@@ -55,6 +55,7 @@
     height: 128px;
     object-fit: cover;
     float: left;
+    image-rendering: crisp-edges;
 }
 
 .custom-dialogue-asterisk {

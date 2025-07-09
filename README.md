@@ -1,4 +1,6 @@
-An extension that adds Undertale-like textboxes.
+# NON-OPTIONAL USAGE GUIDE
+
+An extension that adds Undertale-like textboxes. It is very unintuitive and badly designed please read this thoroughly first.
 
 ## Features
 
@@ -23,6 +25,16 @@ An extension that adds Undertale-like textboxes.
 2. (Optional) Customization per character:
    1. To the public/sounds folder add a folder named {{char}} and inside a file named voice.mp3. You can find UT character voices online, personally I got them from a random website.
    2. Create a sprite folder in the public folder. Inside also add a {{char}} folder with two folders named "thinking" and "talking" inside of it. Inside of those go emotion.png, one with the mouth open.
+      - A more thorough step-by-step guide:
+      
+        a. For every emotion there should be a:
+            
+        - public/sprite/{{char}}/thinking/emotion.png
+        - public/sprite/{{char}}/talking/emotion.png
+        
+        b. Tell the AI to use "emotion"
+        
+        c. AI puts [sprite emotion="emotion"]
    3. Go into the fonts/fonts.json file in the extension and put "{{char}}": "Fontname" like the others.
 3. Turn on the extension.
 4. Tell the AI in the PHI how to format its message. Here is an example prompt:
